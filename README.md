@@ -19,6 +19,9 @@ The central finding is that quaternion networks — classical implementations of
 ---
 
 ## Repository Structure
+
+```
+.
 ├── MNIST_Quaternion.ipynb          # Full pipeline for MNIST (RealNet, QuatNet, Quantum-NoEnt, Quantum-Ent)
 ├── FashionMNIST_Quaternion.ipynb   # Full pipeline for FashionMNIST
 ├── CIFAR_Quaternion.ipynb          # CIFAR-10 with shared 16-D learned bottleneck
@@ -28,6 +31,7 @@ The central finding is that quaternion networks — classical implementations of
 ├── statistical_analysis.py         # Friedman tests, Wilcoxon signed-rank tests, Cohen's d
 ├── quat.ipynb                      # Self-contained prototype: Real vs Quaternion vs Quantum
 └── README.md
+```
 
 ---
 
@@ -128,6 +132,8 @@ Quaternion networks retain **94–97% of real-valued performance** across all da
 - Classical models (RealNet, QuatNet) run on CPU or GPU
 
 ### Software
+
+```
 Python >= 3.10
 torch >= 2.0
 torchvision >= 0.15
@@ -135,6 +141,7 @@ pennylane >= 0.35
 pennylane-lightning[gpu]
 numpy
 scipy
+```
 
 Install dependencies:
 
@@ -156,11 +163,13 @@ For PennyLane Lightning-GPU, CUDA toolkit compatibility must match your GPU driv
 
 Run all cells in `MNIST_Quaternion.ipynb` sequentially. Blocks must be executed in order (1→2→3→4→5) because each block loads the frozen preprocessor saved by Block 1.
 
+```
 Block 1 → realnet_results.pt
 Block 2 → quatnet_results.pt
 Block 3 → quantum_noent_results.pt
 Block 4 → quantum_ent_results.pt
 Block 5 → comparative tables (printed output)
+```
 
 Repeat with `FashionMNIST_Quaternion.ipynb`.
 
