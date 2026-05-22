@@ -237,8 +237,9 @@ If you use this code or build on these results, please cite:
   author  = {Fulton, Christopher P. and Tsapara, Irene and Fulton, Lawrence V.},
   title   = {Classical {SU}(2) Models Match or Exceed Shallow Variational Quantum Circuits
              on Classical Vision Benchmarks},
-  journal = {Quantum Machine Intelligence},
-  year    = {2025},
+  journal = {Research Square},
+  year    = {2026},
+  url     = {https://www.researchsquare.com/article/rs-8501568/v1}
   note    = {Manuscript under review}
 }
 ```
